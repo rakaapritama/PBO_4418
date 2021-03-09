@@ -19,7 +19,27 @@ public class TestTVpraktik2 {
     boolean on;
 //     make on variable
     
-//  object construction
+    public static void main(String args[]) {
+        // TODO code application logic here
+        TestTVpraktik2 tv1 = new TestTVpraktik2();
+        tv1.turnOn(true);
+        tv1.setChannel(30);
+        tv1.setVolume(3);
+        
+        TestTVpraktik2 tv2 = new TestTVpraktik2();
+        tv2.turnOn(true);
+        tv2.channelUp();
+        tv2.volumeUp();
+        tv2.channelUp();
+        tv2.volumeUp();
+        tv2.channelUp();
+        
+        
+        System.out.println("tv1's channel is " + tv1.channel + " and volume is " + tv1.volumeLevel);
+        System.out.println("tv2's channel is " + tv2.channel + " and volume is " + tv2.volumeLevel);
+    }
+
+    //  object construction
     TestTVpraktik2() { 
     } 
     
@@ -54,25 +74,5 @@ public class TestTVpraktik2 {
 //    volume was down
     void volumeDown() {
         --volumeLevel ;
-    }
-   
-    public static void main(String args[]) {
-        // TODO code application logic here
-        TestTVpraktik2 tv1 = new TestTVpraktik2();
-        tv1.turnOn(true);
-        tv1.setChannel(30);
-        tv1.setVolume(3);
-        
-        TestTVpraktik2 tv2 = new TestTVpraktik2();
-        tv2.turnOn(true);
-        tv2.channelUp();
-        tv2.volumeUp();
-        tv2.channelUp();
-        tv2.volumeUp();
-        tv2.channelUp();
-        
-        
-        System.out.println("tv1's channel is " + tv1.channel + " and volume is " + tv1.volumeLevel);
-        System.out.println("tv2's channel is " + tv2.channel + " and volume is " + tv2.volumeLevel);
     }
 }
