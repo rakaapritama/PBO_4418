@@ -46,8 +46,8 @@ public class GamePlayer {
            System.out.println(" Player is Running ");
        }
        public void Run(int incrementX)  {
-           incrementX = positionX + incrementX;
-           System.out.println(" Player still running...current X position = " +incrementX);
+           positionX = positionX + incrementX;
+           System.out.println(" Player still running...current X position = " +positionX);
        }
 
 }
