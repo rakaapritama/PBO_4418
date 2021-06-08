@@ -129,7 +129,6 @@ public class BBideal extends Frame implements ActionListener {
     public static void main(String[] args) {
         // TODO code application logic here
         BBideal demo = new BBideal();
-        
     }
 
 
